@@ -1,0 +1,193 @@
+/*----------Reset styles----------*/
+@import url(reset.css);
+
+/*--------------------------------*/
+body {
+    font-family: "montserrat", sans-serif;
+}
+
+/* ------------------------------------ */
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------------ */
+.page {
+    flex: 1 1 auto;
+    background: url(../img/bg.jpg) center/cover;
+}
+
+.page__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.page__container {
+    max-width: 1470px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 1 0px;
+}
+
+/* ------------------------------------ */
+.contacts {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.3);
+    border-radius: 50px;
+    padding: 40px 50px;
+
+}
+
+.contacts__column {}
+
+/* ------------------------------------ */
+.getintouch {
+    margin: 50px 50px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    max-width: 37.8472222%;
+}
+
+.getintouch__title {
+    font-weight: 700;
+    line-height: auto;
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+.getintouch__title span {
+    color: #DD5471;
+}
+
+.getintouch__text {
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    margin-bottom: 40px;
+}
+
+.getintouch__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__line {
+    position: relative;
+    margin-bottom: 20px;
+    cursor: copy;
+}
+
+.getintouch__input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #E0E0E0;
+    z-index: 3;
+}
+
+.getintouch__input:focus+.form__label {
+    opacity: 0;
+}
+
+.getintouch__input:not(:placeholder-shown)+.form__label {
+    opacity: 0;
+}
+
+.form__label {
+    color: #828282;
+    padding-left: 20px;
+    position: absolute;
+    display: flex;
+    top: 30%;
+    font-size: 14px;
+    font-weight: 171%;
+    z-index: 1;
+    transition: opacity 0.3s;
+}
+
+.form__label span {
+    color: #DD5471;
+    margin-left: 3px;
+    font-size: 16px;
+}
+
+.getintouch__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DD5471;
+    padding: 15px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+/* ------------------------------------- */
+.getintouch__contacts {
+    display: flex;
+}
+
+.getintouch__contacts-column {
+    display: flex;
+    align-items: center;
+    flex: 1 0 33.333%;
+    justify-content: center;
+}
+
+.getintouch__contacts-icon img {}
+
+.getintouch__contacts_body {
+    padding: 0px 40px 0px 17px;
+}
+
+.getintouch__contacts-text {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 153%;
+    letter-spacing: 2%;
+}
+
+.getintouch__contacts-link {
+    color: #DD5471;
+    font-size: 13px;
+    line-height: 153%;
+    letter-spacing: 2%;
+}
+
+/* ------------------------------------- */
+.contacts__map {
+    display: flex;
+    max-width: 37.8472222%;
+    display: flex;
+    z-index: 2;
+}
+
+.contacts__map iframe {}
+
+/* ------------------------------------- */
+.contacts::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 29%;
+    top: 0;
+    right: 0;
+    background: #183A4A;
+    border-radius: 0px 50px 50px 0px;
+}
+
+/* ------------------------------------- */
